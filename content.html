@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Web Informasi Fasilitas Kesehatan Kecamatan Tarub</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.1/css/font-awesome.min.css" integrity="sha512-TECBPTD5Db97nlsJ/gGBBv9JLXg172YcGtrl/HHM4x9W++PPKEpHs61ogVd4x2omTgST1dIHoy2HeYWZzcZzHw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css\card.css"/>
+        <style>
+            :root {
+                --redvelvet: #ea5252;
+            }
+
+            body{
+                background-color: #dbe0e4 !important;
+            }
+            .bg-redvelvet{
+                background-color:  var(--redvelvet);
+            }
+            .bg-image{
+                position: absolute;
+                width: 100%;
+                object-fit: cover;
+                z-index: -1;
+                top: 0;
+                left: 0;
+            }
+            .bg-gambar {
+                background-image: url('assets/bg-gambar1.jpg');
+                background-position: center;
+                background-size: cover;
+                animation: fade-in 15s linear infinite;
+            }
+
+            @keyframes fade-in {
+                0% {
+                    background-image: url('assets/bg-gambar1.jpg');
+                }
+                30% {
+                    background-image: url('assets/bg-gambar2.jpg');
+                }
+                60% {
+                    background-image: url('assets/bg-gambar3.jpg');
+                }
+                90% {
+                    background-image: url('assets/bg-gambar4.jpg');
+                }
+            }
+            .o-hidden {
+                position: relative;
+                overflow: hidden;
+            }
+            .bg-blur {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(255, 255, 255, .55);
+                backdrop-filter: blur(5px);
+                top: 0;
+                left: 0;
+            }
+            .p-relative {
+                position: relative;
+            }
+            .btn-category {
+                border: 1px solid #131313 !important;
+                background-color: transparent;
+                transition: all 200ms ease-in-out;
+                font-weight: 600;
+                white-space: nowrap;
+            }
+            .btn-category:hover {
+                color: #FFFFFF !important;
+                border-color: var(--redvelvet) !important;
+                background-color: var(--redvelvet);
+            }
+            .category {
+                display: flex;
+                justify-content: center;
+                gap: 5px;
+                flex-wrap: nowrap;
+            }
+            @media only screen and (max-width: 360px) {
+                .category {
+                    display: block;
+                    overflow: auto;
+                    white-space: nowrap;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container px-lg-5">
+                <a class="navbar-brand" href="#!">Tarub HK Pools</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Login Admin</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class="py-5">
+            <div class="container px-lg-5">
+                <div class="category">
+                    <button class="btn btn-category">Puskesmas</button>
+                    <button class="btn btn-category">Dokter & Bidan</button>
+                    <button class="btn btn-category">Apotek</button>
+                </div>
+            </div>
+        </header>
+        <!-- Page Content-->
+        <div class="grid">
+            <div class="grid-item">
+              <div class="crt">
+                <img class="crt-img" src="img\puskesmas-jatibogor.jpg" alt="puskesmas-jatibogor" />
+                <div class="crt-content">
+                  <h1 class="crt-header">Puskesmas Jatibogor</h1>
+                  <p class="crt-text">
+                    <strong>Alamat :</strong> 36XR+67F, Jatibogor, Kec. Suradadi, Kabupaten Tegal, Jawa Tengah 52182s
+                  </p>
+                  <button class="crt-btn">Details <span>&rarr;</span></button>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="crt">
+                <img
+                  class="crt-img"
+                  src="img\hadar.jpg"
+                  alt="hadar"
+                />
+                <div class="crt-content">
+                  <h1 class="crt-header">Dokter Hadar</h1>
+                  <p class="crt-text">
+                    <strong>Alamat :</strong> Pemalang Taman
+                  </p>
+                  <button class="crt-btn">Details <span>&rarr;</span></button>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="crt">
+                <img class="crt-img" src="./img/maldives.jpg" alt="Maldives" />
+                <div class="crt-content">
+                  <h1 class="crt-header">Maldives</h1>
+                  <p class="crt-text">
+                    The Maldives are known for their
+                    <strong>natural environment</strong> including the blue ocean,
+                    white beaches, and clean air, attracting tourists.
+                  </p>
+                  <button class="crt-btn">Details <span>&rarr;</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Aldilla Nurhidayatullah & Dicky Ardiansyah, 2022</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
